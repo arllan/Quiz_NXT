@@ -1,2 +1,2 @@
-# Quiz_NXT
-Quiz de perguntas utilizado aulas de robótica.
+# Projeto-cardapio
+Diretório contendo o projeto do cardápio digital

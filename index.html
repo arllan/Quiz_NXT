@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cardapio</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <body>
+    <center>
+      <img style="margin-top: 10%;" id="imagem-inicial" class="img-responsive animated zoomIn" src="imagem-tela-inicial.png" >
+    </center>
+    <div class="container-fluid" id="corpo" hidden="hidden">
+      <div class="row">
+        <!--
+        <img class="img-responsive" src="site.svg" height="250px" alt="">
+        -->
+      </div>
+      <div class="row">   
+        <div class="col-md-4 col-lg-12">
+            <div class="thumbnail">
+              <img alt="800x400" src="https://picsum.photos/800/400" />
+              <div class="caption">
+                <h3>
+                  AÇAI PEQUENO 300ml
+                </h3>
+                <p>
+                  <b>Açai com duas opções de creme + quatro complementos + dois tipos de caldas e duas opções de frutas.  </b>  
+                </p>
+                <p>
+                  <span class="label label-primary">A parti de R$ 7,00</span>
+                </p>
+                <p>
+                   <a href="cardapio.html?acai=1" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus-sign"></span> Quero esse</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-12">
+            <div class="thumbnail">
+              <img alt="300x200" src="https://picsum.photos/800/400" />
+              <div class="caption">
+                <h3>
+                  AÇAI MÉDIO 500ml
+                </h3>
+                <p>
+                  <b>Açai com duas opções de creme + quatro complementos + dois tipos de caldas e duas opções de frutas.  </b>  
+                </p>
+                <p>
+                  <span class="label label-primary">A parti de R$ 13,00</span>
+                </p>
+                <p>
+                   <a href="cardapio.html?acai=2" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus-sign"></span> Quero esse</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-12">
+            <div class="thumbnail">
+              <img alt="300x200" src="https://picsum.photos/800/400" />
+              <div class="caption">
+                <h3>
+                  AÇAI GRANDE 700ml
+                </h3>
+                <p>
+                  <b>Açai com duas opções de creme + quatro complementos + dois tipos de caldas e duas opções de frutas.  </b>  
+                </p>
+                <p>
+                  <span class="label label-primary">A parti de R$ 17,00</span>
+                </p>
+                <p>
+                   <a href="cardapio.html?acai=3" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus-sign"></span> Quero esse</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <a class="navbar-brand" href="#"><b> Total R$: 6,00</b> </a>
+            <a class=" navbar-right"><a style="margin-top: 5px;" href="whatsapp://send?text=Dados do meu pedido" class="btn btn-success btn-sm "><span class="glyphicon glyphicon-ok"></span> Finalizar Pedido</a></a>
+          </div>
+        </nav>
+        -->
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript">
+      $("body").css("background-color", "#8B008B");
+
+      setTimeout(teste,2000);
+
+      function teste() {
+        $("body").css("background-color", "#FFFFFF");
+        $("#corpo").show(); //mostrar o conteudo da pagina
+        $("#imagem-inicial").hide(); // esconder imagem
+
+        console.log('teste');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cardapio</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <body>
+    <style type="text/css" media="screen">
+      .escolha{ float: right; width: 20px; height: 20px; }
+    </style>
+    <div class="container-fluid">
+      <div class="row">
+        <!--
+        <img class="img-responsive" src="site.svg" height="250px" alt="">
+        -->
+      </div>
+      <div class="row">   
+        <div class="col-md-12">
+            <div class="thumbnail">
+              <img alt="300x200" src="https://picsum.photos/800/400" />
+              <div class="caption">
+                <h3 id="ml_acai">
+                  
+                </h3>
+                <p>
+                  <span id="preco-acai" class="label label-primary"></span>
+                </p>
+            </div>
+          </div>
+              <div id="elemento-pai" class="list-group">
+                  <div class="list-group-item  active">
+                    <h4>Creme  <span class="label label-default">  <span id="status">0</span>/4   </span></h4>
+                  </div>  
+                  <span id="opcaoA">
+                    <div class="list-group-item">Chocolate <input  id="teste-elemento" name="teste1" class="escolha" type="checkbox" value="Chocolate"></div>
+                    <div class="list-group-item">Creme de Cupuaçu <input class="escolha" type="checkbox" value="Creme de Cupuaçu"></div>
+                    <div class="list-group-item">Iogurte com Morangos <input class="escolha" type="checkbox" value="Iogurte com Morangos"></div>
+                    <div class="list-group-item">Leite Ninho <input class="escolha" type="checkbox" value="Leite Ninho"></div>
+                    <div class="list-group-item">Leite Ninho Trunfado<input class="escolha" type="checkbox" value="Leite Ninho Trunfado"></div>
+                    <div class="list-group-item">Paçoca<input class="escolha" type="checkbox" value="Paçoca"></div>
+                    <div class="list-group-item">Prestígio<input class="escolha" type="checkbox" value="Prestígio"></div>
+                  </span>
+              </div>
+
+              <div class="list-group">
+                  <div class="list-group-item  active"><h4>Complementos <span class="label label-default">   1/4   </span></h4></div>
+                  <div class="list-group-item">Chocoball <input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Farinha de Amendoim <input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Farinha Láctea <input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Granola com Cereais <input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Sucrilhos<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Granulado<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Jujubas<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Leite em Pó<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Pastilhas de Chocolate<input class="escolha" type="checkbox" value=""></div>
+              </div>
+
+              <div class="list-group">
+                  <div class="list-group-item  active"><h4>Frutas</h4></div>
+                  <div class="list-group-item">Banana<input class="escolha" type="checkbox" value=""></div>
+              </div>
+
+              <div class="list-group">
+                  <div class="list-group-item  active"><h4>Caldas</h4></div>
+                  <div class="list-group-item">Caramelo<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Chocolate<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Leite Condensado<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Morango<input class="escolha" type="checkbox" value=""></div>
+                  <div class="list-group-item">Kiwi<input class="escolha" type="checkbox" value=""></div>
+              </div>
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <a class="navbar-brand" href="#"><b id="preco-final"> Total R$: 0,00</b> </a>
+            <a class=" navbar-right"><a style="margin-top: 5px;" href="whatsapp://send?text=Acai de"  class="btn btn-success btn-sm "><span class="glyphicon glyphicon-ok"></span> Finalizar Pedido</a></a>
+          </div>
+        </nav>
+    </div>
+
+
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Atenção</h4>
+      </div>
+      <div class="modal-body">
+        <p>Mensagem de alerta</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+  </body>
+</html>
